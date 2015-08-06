@@ -1,1 +1,3 @@
-require('./my-module');
+var foobar = require('./my-module');
+
+foobar('Aiko!');
