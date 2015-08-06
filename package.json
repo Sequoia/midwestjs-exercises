@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Sequoia/midwestjs-exercises",
   "dependencies": {
+    "express": "^4.13.3",
     "mime": "^1.3.4",
     "mongoose": "^4.1.1"
   }
