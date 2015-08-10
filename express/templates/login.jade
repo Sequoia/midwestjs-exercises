@@ -1,0 +1,11 @@
+html
+  head
+    title Login
+    link(rel="stylesheet" href="/styles.css")
+  body
+    form(action="/login" method="post")
+      label Username
+        input(type="text" name="name")
+      label Password
+        input(type="password" name="pass")
+      button Login
