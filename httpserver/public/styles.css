@@ -2,3 +2,6 @@ h1{
   font-family:arial;
   border-bottom:solid 2px green;
 }
+h1.error{
+  border-bottom:solid 4px red;
+}

@@ -23,4 +23,9 @@ myApp.use(function notFound(req, res, next){
   next(e);
 });
 
+myApp.use(function defaultErrorHandler(err, req, res, next){
+  console.log(err.message);
+  res.render('error', {code: err.code, message: err.message});
+});
+
 myApp.listen(8080);
