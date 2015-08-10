@@ -17,4 +17,10 @@ myApp.use('/', helloRouter);
 
 myApp.use('/widgets', widgetsRouter);
 
+myApp.use(function notFound(req, res, next){
+  var e = new Error('not found');
+  e.code = 404;
+  next(e);
+});
+
 myApp.listen(8080);
