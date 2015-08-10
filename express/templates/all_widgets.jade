@@ -1,0 +1,16 @@
+html
+  head
+    title Widgets
+    link(rel="stylesheet" href="/styles.css")
+  body
+    h1 Widgets
+      table
+        tr
+          th id
+          th name
+        for widget in widgets
+          tr
+            td= widget.id
+            td= widget.name
+    include partials/menu
+

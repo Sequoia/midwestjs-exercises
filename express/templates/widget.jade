@@ -1,0 +1,14 @@
+html
+  head
+    title widget #{name}
+    link(rel="stylesheet" href="/styles.css")
+  body
+    h1 Widget Info
+      table
+        tr
+          th id
+          th name
+        tr
+          td= id
+          td= name
+    include partials/menu
