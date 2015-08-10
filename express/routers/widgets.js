@@ -8,4 +8,8 @@ router.post('/',function handleRoot(req, res, next) {
   res.json(req.body);
 });
 
+router.get('/create',function handleRoot(req, res, next) {
+  res.render('widget_form');
+});
+
 module.exports = router;

@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 var helloRouter = require('./routers/helloworld');
 var widgetsRouter = require('./routers/widgets');
 
+myApp.set('views', 'templates');
+myApp.set('view engine', 'jade');
+
 myApp.use(bodyParser.urlencoded({extended: false}));
 myApp.use(bodyParser.json());
 
